@@ -1,0 +1,70 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dark-mode {
+    background-color: #121212; 
+    color: #E0E0E0; 
+}
+
+.dark-mode .game {
+    background-color: #121212; 
+}
+
+.dark-mode #heading{
+    background-color: #1E1E1E;
+    border: 2px solid #FFD700;
+    color: #ffffc7;
+}
+
+.dark-mode .fa-crown{
+    color: #FFD700; 
+}
+
+.dark-mode .panel{
+    background-color: #444444;
+    border: 2px solid #FFD700;
+}
+
+.dark-mode .box {
+    background-color: #333333; 
+    color: #FFD700; 
+}
+
+.dark-mode .box:active {
+    background-color: #444444;
+}
+
+.dark-mode .winCount {
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+}
+
+.dark-mode button {
+    background-color: #ffffc7;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+}
+
+.dark-mode #reset , .dark-mode #newGame{
+    background-color: #1E1E1E;
+    border: 2px solid #FFD700;
+    color:#ffffc7;
+}
+
+.dark-mode .msg-container {
+    color: #FFD700;
+}
+
+.dark-mode .glow {
+    background-color: #FFD700;
+    box-shadow: 0 0 15px #FFD700;
+}
+
+.dark-mode .X{
+    color: #FF6B6B;
+}
+
+.dark-mode .O{
+    color: #4A90E2;
+}

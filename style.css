@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+}
+
+body{
+    background-color: #548687;
+    text-align: center;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: -3.5rem;
+    margin-top: 1.5rem;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: -25px;
+}
+
+#heading{
+    display: block;
+    border: none;
+    margin: 2rem;
+    padding: 0.85rem;
+    background-color: #ffffc7;
+    color: #191913;
+    width: 15rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:center;
+    gap: 1.5vmin;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+}
+
+#reset, #newGame{
+    width: 10.2rem;
+    gap: 5px;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,1);
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+.crown1, .crown2{
+    visibility: hidden;
+}
+
+.fa-crown{
+    margin-left: 1rem;
+}
+
+.msg-container{
+    margin: 5px;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffc7;
+}
+
+.buttons{
+    margin: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    background-color: #191913;
+    height: 60vmin;
+    width: 30vmin;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: baseline;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.winCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffc7;
+    height: 2.5rem;
+    margin-top: 0.85rem;
+    width: 12rem;
+    border-radius: 0.8rem;
+    font-weight: bold;
+}
+
+#player1, #player2{
+    color: #ffffc7;
+    font-size: 12vmin;
+    margin-top: 2.5rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease-in-out;
+}
+
+.glow{
+    background-color:#F8C630;
+    border: 3px solid #ffcc00;
+    box-shadow: 0 0 15px #ffcc00;
+    transition: all 0.5s ease-in-out;
+}
+
+.X{
+    color: #b0413e;
+}
+
+.O{
+    color: #33658A;
+}
