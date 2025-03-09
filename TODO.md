@@ -2,7 +2,6 @@
 # **📌 TODO List - Tic Tac Toe Game**  
 
 ## **🔹 Immediate Improvements (Priority Tasks)**  
-✅ **Fix Draw Condition Bug** – Ensure that the game does **not declare a draw** when a player wins on the last move.  
 ✅ **Improve Dark Mode** – Save user preference using **Local Storage** so the theme persists after a refresh.  
 ✅ **Store Scores Permanently** – Use **Local Storage** to keep track of scores across game sessions.  
 
