@@ -26,9 +26,13 @@
     }
 
     .winCount {
-        width: 80%;
+        width: 70%;
         height: auto;
         padding: 0.5rem;
+    }
+
+    .winCount1{
+        width: 80%;
     }
 
     #player1, #player2 {
