@@ -11,6 +11,9 @@ let player1=document.querySelector("#player1");
 let countX=0;
 let player2=document.querySelector("#player2");
 let mode=document.querySelector("#heading");
+let turn=document.querySelector(".winCount");
+let turn1=document.querySelector(".winCount1");
+
 const winPattern=[
     [0,1,2],
     [0,4,8],
@@ -90,28 +93,48 @@ const showWinner=(winner)=>{
 
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
+        if (box.innerText !== "") return; // Prevent overwriting moves
+
         if (turn0) {
             box.innerHTML = "O";
             box.classList.add("O");
             box.classList.remove("X");
-            turn0 = false;
+            turn0 = false; // Switch turn after placing move
         } else {
             box.innerHTML = "X";
             box.classList.add("X");
             box.classList.remove("O");
-            turn0 = true;
+            turn0 = true; // Switch turn after placing move
         }
-        
+
         box.disabled = true;
         count += 1;
 
         let isWinner = checkWinner();
 
+        if (isWinner) {
+            return; // Stop execution to prevent turn highlighting
+        }
+
         if (!isWinner && count === 9) {
             checkDraw();
+        } else {
+            updateTurnIndicator(); // Update turn only if no winner
         }
     });
 });
+
+const updateTurnIndicator = () => {
+    if (turn0) {
+        turn.classList.add("active-turn");
+        turn1.classList.remove("active-turn");
+    } else {
+        turn1.classList.add("active-turn");
+        turn.classList.remove("active-turn");
+    }
+};
+
+updateTurnIndicator();
 
 const checkDraw=()=>{
     player.innerText=`Match Draw`
@@ -132,6 +155,7 @@ const resetGame=()=>{
     crown1.classList.add("crown1");
     crown2.classList.add("crown2");
     player.classList.add("hide");
+    updateTurnIndicator();
 }
 
 const newgame=()=>{
@@ -142,6 +166,7 @@ const newgame=()=>{
     crown1.classList.add("crown1");
     crown2.classList.add("crown2");
     player.classList.add("hide");
+    updateTurnIndicator();
 }
 
 reset.addEventListener("click",resetGame);

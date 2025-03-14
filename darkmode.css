@@ -35,9 +35,18 @@
     background-color: #444444;
 }
 
-.dark-mode .winCount {
-    background-color: #1E1E1E;
-    color: #E0E0E0;
+.dark-mode .winCount, 
+.dark-mode .winCount1 {
+    background-color: #333;
+    color: #E8F0FF;
+}
+
+.dark-mode .active-turn {
+    background-color: #1abc9c;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(26, 188, 156, 0.8);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .dark-mode button {
