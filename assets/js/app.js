@@ -169,5 +169,11 @@ const newgame=()=>{
     updateTurnIndicator();
 }
 
+if (window.location.hostname === "adrishikharchowdhury.github.io") {
+    const baseTag = document.createElement("base");
+    baseTag.href = "/Katakuti/";
+    document.head.appendChild(baseTag);
+  }
+  
 reset.addEventListener("click",resetGame);
 newGame.addEventListener("click",newgame);
